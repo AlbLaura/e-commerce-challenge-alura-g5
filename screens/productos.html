@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de productos</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- estilos -->
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/productos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-empresa">
+            <img src="../assets/imagenes/Logo.png" alt="Logo de la empresa Alura Geek">
+        </div>
+        <div class="header__input">
+            <input class="header__buscador" type="search" placeholder="¿Qué deseas buscar?" data-search>
+            <span class="header__buscador-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <!-- <div class="header__login">
+            <button class="header__btn-login" data-login>Login</button>
+        </div> -->
+        <!-- <div class="header__admin">
+            <button class="header__btn-admin" data-admin>Menú Administrador</button>
+        </div> -->
+    </header>
+    <main>
+        <section class="productos">
+            <h2 class="p__titulo">Todos los productos</h2>
+            <a href="#" class="p__btn-agregar" data-add>Agregar producto</a>
+            <div class="p__lista"> <!-- row -->
+                <div class="p__item">
+                    <button class="p__btn-eliminar" data-delete><i class="fa-solid fa-trash"></i></button>
+                    <button class="p__btn-editar" data-edit><i class="fa-solid fa-pen"></i></button>
+                    <img src="#" alt="imagen del producto" class="p__img">
+                    <h4 class="p__nombre">Producto XYZ</h4>
+                    <span class="p__precio">$ 60,00</span>
+                    <span class="p__id">#111111</span>
+                </div>
+            </div>
+        </section>
+        <section class="contacto">
+            <div class="logo-empresa">
+                <img src="../assets/imagenes/Logo.png" alt="Logo de la empresa Alura Geek">
+            </div>
+            <ul class="contacto__lista">
+                <li class="lista__item">Quienes somos</li>
+                <li class="lista__item">Politica de privacidad</li>
+                <li class="lista__item">Programa de fidelidad</li>
+                <li class="lista__item">Nuestras tiendas</li>
+                <li class="lista__item">Quiero ser franquiciado</li>
+                <li class="lista__item">Anuncie aqui</li>
+            </ul>
+            <form action="#" class="form-contacto" data-form>
+                <h3 class="form__titulo">Hable con nosotros</h3>
+                <label class="form__label" for="nombre">Nombre</label>
+                <input class="form__input" type="text" name="nombre" placeholder="Escriba su nombre completo" data-nombre>
+                <label class="form__label" for="mensaje">Mensaje</label>
+                <textarea class="form__input" type="text" name="mensaje" placeholder="Escriba su mensaje" data-mensaje></textarea>
+                <button class="form__btn-submit" type="submit" data-submit>Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <span class="footer__titulo">Desarrollado por Laura Soledad Albornoz</span>
+        <span class="footer__fecha">2023</span>
+    </footer>
+</body>
+</html>

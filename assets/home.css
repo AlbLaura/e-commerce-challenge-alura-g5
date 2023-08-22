@@ -1,0 +1,58 @@
+.banner {
+    background: url("../assets/imagenes/banner-image.png") no-repeat center/cover;
+    padding: 15rem 10rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.banner__titulo {
+    color: var(--color-blanco);
+    font-size: 4rem;
+}
+.banner__info {
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.banner__btn {
+    width: 150px;
+}
+
+.productos {
+    background-color: var(--color-gris);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem 10rem 0rem;
+}
+.p__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.producto__lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.p__titulo {
+    font-size: 2.5rem;
+    color: var(--color-negro-claro);
+}
+.p__item {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+}
+.p__precio, .p__btn, .p__btn-all {
+    font-weight: 700;
+}
+.p__btn, .p__btn-all {
+    text-decoration: none;
+    color: var(--color-azul)
+}
+.fa-arrow-right {
+    margin-left: 1rem;
+}

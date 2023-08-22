@@ -1,0 +1,18 @@
+.agregar-producto {
+    display: flex;
+    justify-content: center;
+    padding: var(--padding-centrar);
+}
+.ap__form__titulo {
+    text-align: center;
+}
+.ap__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+    width: 800px;
+}
+.ap__form__btn-submit {
+    width: 100%;
+}

@@ -1,0 +1,119 @@
+/*base*/
+:root {
+    --color-gris: #f5f5f5;
+    --color-gris-oscuro: #A2A2A2;
+    --color-negro-claro: #464646;
+    --color-blanco: #ffffff;
+    --color-azul-claro: #eaf2fd;
+    --color-azul: #2a7ae4;
+    --btn-max: 1em 2em;
+    --padding-centrar: 3em 0rem 3rem 0rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Helvetica;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--color-gris);
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--color-blanco);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+input, textarea {
+    background-color: var(--color-blanco);
+    border: none;
+    padding: 1rem;
+    margin: .5rem 0;
+    cursor: text;
+}
+
+button {
+    background-color: var(--color-azul);
+    width: 250px;
+    border: none;
+    color: white;
+    padding: var(--btn-max);
+    cursor: pointer;
+}
+
+[placeholder] {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--color-gris);
+}
+
+.logo-empresa {
+    height: 1rem;
+}
+
+.header__input {
+    width: 400px;
+    position: relative;
+}
+.header__buscador {
+    background-color: var(--color-gris);
+    padding: .5rem 10rem .5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: text;
+}
+.header__buscador-icon {
+    color: var(--color-gris-oscuro);
+    position: absolute;
+    display: block;
+    bottom: .8rem;
+    right: 5rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.header__btn-admin, .header__btn-login {
+    background-color: var(--color-blanco);
+    color: var(--color-azul);
+    font-weight: 700;
+    border: 2px solid var(--color-azul);
+}
+
+.contacto { 
+    min-height: 250px;
+    background-color: var(--color-azul-claro);
+    padding: 4rem 8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    flex-grow: .5;
+    height: 100%;
+}
