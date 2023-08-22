@@ -1,0 +1,38 @@
+.productos {
+    padding: var(--padding-centrar);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.p__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.p__lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.p__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.p__img {
+    width: 200px;
+}
+.p__precio {
+    font-weight: 700;
+}
+.modal__item {
+    position: absolute;
+    display: block;
+    right: 0rem;
+    top: .2rem;
+}
+.p__btn {
+    color: var(--color-blanco);
+    padding: 0rem .5rem;
+}

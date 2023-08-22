@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesion</title>
+    <title>Producto XYZ</title>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- estilos -->
     <link rel="stylesheet" href="/assets/styles.css">
-    <link rel="stylesheet" href="/assets/login.css">
+    <link rel="stylesheet" href="/assets/producto.css">
 </head>
 <body>
     <header class="header">
@@ -24,14 +24,25 @@
             <span class="header__buscador-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
         </div>
     </header>
-    <main class="main">
-        <section class="formulario-login">
-            <form action="#" class="form" data-form>
-                <h2 class="form__titulo">Iniciar Sesión</h2>
-                <input class="form__input" type="text" name="email" placeholder="Escriba su correo electrónico" data-email>
-                <input class="form__input" type="text" name="password" placeholder="Escriba su contraseña" data-password>
-                <button class="form__submit" type="submit" data-submit>Entrar</button>
-            </form>
+    <main>
+        <section class="producto-contenido">
+            <article class="producto-principal">
+                <img class="pp__imagen" src="../assets/imagenes/star-wars.png" alt="Producto XYZ">
+                <h2 class="pp__titulo">Producto XYZ</h2>
+                <span class="pp__precio">$ 60,00</span>
+                <p class="pp__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga possimus, quaerat voluptates assumenda pariatur voluptatum necessitatibus dolor error officiis perspiciatis minus debitis rerum amet hic ullam odit non in perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa ducimus amet enim quae quia asperiores excepturi sit commodi in suscipit, perspiciatis molestias totam fugit, fuga consectetur distinctio quod quas.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga possimus, quaerat voluptates assumenda pariatur voluptatum necessitatibus dolor error officiis perspiciatis minus debitis rerum amet hic ullam odigitt non in perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa ducimus amet enim quae quia asperiores excepturi sit commodi in suscipit, perspiciatis molestias totam fugit, fuga consectetur distinctio quod quas.
+                </p>
+            </article>
+            <article class="productos-similares">
+                <h3 class="ps__titulo">Productos similares</h3>
+                <div class="ps__item">
+                    <img class="ps__imagen" src="../assets/imagenes/console.png" alt="producto similar - XYZ">
+                    <h4 class="ps__nombre">Producto XYZ</h4>
+                    <span class="ps__precio">$ 60,00</span>
+                    <a class="ps__btn" href="#">Ver producto</a>
+                </div>
+            </article>
         </section>
         <section class="contacto">
             <div class="logo-empresa">
@@ -53,7 +64,6 @@
                 <textarea class="form__input" type="text" name="mensaje" placeholder="Escriba su mensaje" data-mensaje></textarea>
                 <button class="form__btn-submit" type="submit" data-submit>Enviar mensaje</button>
             </form>
-        </section>
     </main>
     <footer class="footer">
         <span class="footer__titulo">Desarrollado por Laura Soledad Albornoz</span>
