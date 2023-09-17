@@ -46,10 +46,10 @@
     flex-direction: column;
     margin: 1rem 0rem;
 }
-.p__precio, .p__btn, .p__btn-all {
+.p__precio, .p__btn-producto, .p__btn-all {
     font-weight: 700;
 }
-.p__btn, .p__btn-all {
+.p__btn-producto, .p__btn-all {
     text-decoration: none;
     color: var(--color-azul)
 }

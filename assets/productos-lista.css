@@ -11,13 +11,13 @@
 }
 .p__lista {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 .p__item {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-right: 2rem;
     margin-bottom: 1rem;
 }
 .p__img {
@@ -35,4 +35,17 @@
 .p__btn {
     color: var(--color-blanco);
     padding: 0rem .5rem;
+}
+.p__btn-producto {
+    visibility: visible;
+    color: var(--color-azul);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+[data-delete]:hover {
+    color: var(--color-error);
+}
+[data-edit]:hover {
+    color: var(--color-azul);
 }

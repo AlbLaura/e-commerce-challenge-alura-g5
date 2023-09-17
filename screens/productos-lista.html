@@ -16,9 +16,9 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo-empresa">
+        <a href="index.html" class="logo-empresa">
             <img src="../assets/imagenes/Logo.png" alt="Logo de la empresa Alura Geek">
-        </div>
+        </a>
         <div class="header__input">
             <input class="header__buscador" type="search" placeholder="¿Qué deseas buscar?" data-search>
             <span class="header__buscador-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -28,9 +28,22 @@
         <section class="productos">
             <div class="p__header">
                 <h2 class="p__titulo">Todos los productos</h2>
-                <button class="p__btn-agregar" data-add>Agregar producto</button>
+                <a href="nuevo-producto.html" data-add hidden> <!-- hidden/visible -->
+                    <button class="p__btn-agregar">Agregar producto</button>
+                </a>
             </div>
             <div class="p__lista"> <!-- row -->
+                <div class="p__item">
+                    <div class="modal__item">
+                        <a class="p__btn" data-delete hidden><i class="fa-solid fa-trash"></i></a> <!-- hidden/visible -->
+                        <a class="p__btn" data-edit hidden><i class="fa-solid fa-pen"></i></a> <!-- hidden/visible -->
+                    </div>
+                    <img src="../assets/imagenes/console.png" alt="imagen del producto" class="p__img">
+                    <h4 class="p__nombre">Producto XYZ</h4>
+                    <span class="p__precio">$ 60,00</span>
+                    <span class="p__id" hidden>#111111</span> <!-- hidden/visible -->
+                    <a href="producto.html" class="p__btn-producto">Ver Producto</a> <!-- visible/hidden -->
+                </div>
                 <div class="p__item">
                     <div class="modal__item">
                         <a class="p__btn" data-delete><i class="fa-solid fa-trash"></i></a>
@@ -40,6 +53,7 @@
                     <h4 class="p__nombre">Producto XYZ</h4>
                     <span class="p__precio">$ 60,00</span>
                     <span class="p__id">#111111</span>
+                    <a href="producto.html" class="p__btn-producto">Ver Producto</a>
                 </div>
         </section>
         <section class="contacto">
@@ -47,12 +61,12 @@
                 <img src="../assets/imagenes/Logo.png" alt="Logo de la empresa Alura Geek">
             </div>
             <ul class="contacto__lista">
-                <li class="lista__item">Quienes somos</li>
-                <li class="lista__item">Politica de privacidad</li>
-                <li class="lista__item">Programa de fidelidad</li>
-                <li class="lista__item">Nuestras tiendas</li>
-                <li class="lista__item">Quiero ser franquiciado</li>
-                <li class="lista__item">Anuncie aqui</li>
+                <li class="lista__item"><a href="#">Quienes somos</a></li>
+                <li class="lista__item"><a href="#">Politica de privacidad</a></li>
+                <li class="lista__item"><a href="#">Programa de fidelidad</a></li>
+                <li class="lista__item"><a href="#">Nuestras tiendas</a></li>
+                <li class="lista__item"><a href="#">Quiero ser franquiciado</a></li>
+                <li class="lista__item"><a href="#">Anuncie aqui</a></li>
             </ul>
             <form action="#" class="form-contacto" data-form>
                 <h3 class="form__titulo">Hable con nosotros</h3>
@@ -61,11 +75,12 @@
                 <label class="form__label" for="mensaje">Mensaje</label>
                 <textarea class="form__input" type="text" name="mensaje" placeholder="Escriba su mensaje" data-mensaje></textarea>
                 <button class="form__btn-submit" type="submit" data-submit>Enviar mensaje</button>
+                <!-- <div class="toast-aviso --error" data-toast hidden>Error: {inserte error aqui}</div>
+                <div class="toast-aviso --correcto" data-toast hidden>Mensaje enviado!</div> -->
             </form>
-        </section>
     </main>
     <footer class="footer">
-        <span class="footer__titulo">Desarrollado por Laura Soledad Albornoz</span>
+        <span class="footer__titulo">Desarrollado por <a class="footer__nombre" href="https://alblaura.github.io/portfolio-challenge-alura-g5/" target="_blank">Laura Soledad Albornoz</a></span>
         <span class="footer__fecha">2023</span>
     </footer>
 </body>
